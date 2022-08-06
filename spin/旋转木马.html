@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>始于心动</title>
+    <html>
+
+    <head>
+
+        <style>
+            body {
+                background-image: url(-1.jpg)
+                ;
+                text-align: center;
+
+            }
+
+            .fudian {
+                font-size: 16px;
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                color: pink;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                cursor: auto;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            #main img {
+                width: 300px;
+                height: 400px;
+                position: absolute;
+                border: 5px green double;
+            }
+
+            #main img:nth-child(1) {
+                transform: translateZ(500px);
+            }
+
+            #main img:nth-child(2) {
+                transform: rotateY(40deg) translateZ(500px);
+            }
+
+            #main img:nth-child(3) {
+                transform: rotateY(80deg) translatez(500px);
+            }
+
+            #main img:nth-child(4) {
+                transform: rotateY(120deg) translatez(500px);
+            }
+
+            #main img:nth-child(5) {
+                transform: rotateY(160deg) translatez(500px);
+            }
+
+            #main img:nth-child(6) {
+                transform: rotateY(200deg) translatez(500px);
+            }
+
+            #main img:nth-child(7) {
+                transform: rotateY(240deg) translatez(500px);
+            }
+
+            #main img:nth-child(8) {
+                transform: rotateY(280deg) translatez(500px);
+            }
+
+            #main img:nth-child(9) {
+                transform: rotateY(320deg) translatez(500px);
+            }
+
+            /*# id选择器   id不能重复命名*/
+            #main {
+                margin: 100px auto;
+                /*让父元素居中*/
+                width: 300px;
+                height: 400px;
+                /*声明一个3D空间*/
+                transform-style: preserve-3d;
+                transform: rotateX(-10deg);
+                animation-name: animate;
+                animation-duration: 10s;
+                /*动画执行次数*/
+                animation-iteration-count: infinite;
+                /*动画持续时间：无限 */
+                animation-timing-function: linear;
+                position: relative;
+            }
+
+            /*定义一个动画*/
+            @keyframes animate {
+                0% {
+                    transform: rotateX(-10deg) rotateY(0deg);
+                }
+
+                100% {
+                    transform: rotateX(-10deg) rotateY(360deg);
+                }
+            }
+        </style>
+    </head>
+
+<body>
+    <div id="main">
+        <img src="1.jpg" />
+        <img src="2.jpg" />
+        <img src="3.jpg" />
+        <img src="4.jpg" />
+        <img src="5.jpg" />
+        <img src="6.jpg" />
+        <img src="7.jpg" />
+        <img src="8.jpg" />
+        <img src="9.jpg" /> 
+        
+    </div>
+    <div style="z-index: 999;display: block;position: fixed;color: powderblue;left: 0px;top: 0px;"></div>
+    <div id="ever">
+        <a title="心动了吗"><b></b></a></div>
+        <div class="fudian">
+           <a href="">永不停止</a> </div>
+    
+</body>
+
+</html>
+</head>
